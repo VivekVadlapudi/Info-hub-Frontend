@@ -22,9 +22,8 @@ const CurrencyConverter = () => {
     setIsLoading(true);
     setError('');
     setResult(null);
-
     try {
-      const response = await fetch(`https://info-hub-frontend-wdti.vercel.app/api/weather?amount=${numAmount}`);
+      const response = await fetch(`https://info-hub-frontend-wdti.vercel.app/api/currency?amount=${numAmount}`);
 
       if (!response.ok) {
         const errorData = await response.json();
