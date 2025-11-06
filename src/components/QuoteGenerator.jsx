@@ -12,7 +12,9 @@ const QuoteGenerator = () => {
     setError('');
 
     try {
-      const response = await fetch('https://info-hub-frontend-wdti-frekx3dxw.vercel.app/api/quote');
+      
+      const response = await fetch('https://info-hub-frontend-wdti.vercel.app/api/quote');
+
 
       if (!response.ok) {
         throw new Error('Failed to fetch quote');
