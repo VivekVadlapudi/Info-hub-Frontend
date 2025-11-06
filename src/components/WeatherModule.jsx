@@ -15,7 +15,7 @@ const WeatherModule = () => {
 
     try {
       const response = await fetch(
-        `/api/weather?city=${encodeURIComponent(cityName)}`
+        `https://info-hub-frontend-wdti-frekx3dxw.vercel.app/api/weather?city=${encodeURIComponent(cityName)}`
       );
 
       if (!response.ok) {
